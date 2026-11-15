@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotelJoaquim.Views.SobrePage"
+             Title="Sobre" BackgroundColor="#F5F7FA">
+    <ScrollView>
+        <VerticalStackLayout Padding="24,28,24,40" Spacing="18" MaximumWidthRequest="650">
+            <Image Source="hotel.png" HeightRequest="125" WidthRequest="125" />
+            <Label Text="Sobre o aplicativo" FontSize="27" FontAttributes="Bold" TextColor="#10253F" />
+            <Label Text="App Hotel Aurora" FontSize="20" FontAttributes="Bold" TextColor="#B98C52" />
+            <Label Text="Um simulador educativo de reservas de hospedagem, desenvolvido para exercitar a criação de interfaces com .NET MAUI, XAML e C#."
+                   FontSize="15" TextColor="#556577" />
+            <Border Stroke="#DCE5ED" BackgroundColor="White" Padding="22" StrokeShape="RoundRectangle 18">
+                <VerticalStackLayout Spacing="13">
+                    <Label Text="DESENVOLVEDOR" FontSize="12" FontAttributes="Bold" TextColor="#B98C52" />
+                    <Label Text="Joaquim de Souza Araujo" FontSize="19" FontAttributes="Bold" TextColor="#10253F" />
+                    <BoxView HeightRequest="1" Color="#E9EDF2" />
+                    <Label Text="ANO DE DESENVOLVIMENTO" FontSize="12" FontAttributes="Bold" TextColor="#B98C52" />
+                    <Label Text="2026" FontSize="19" TextColor="#10253F" />
+                    <BoxView HeightRequest="1" Color="#E9EDF2" />
+                    <Label Text="TECNOLOGIAS" FontSize="12" FontAttributes="Bold" TextColor="#B98C52" />
+                    <Label Text="C# • XAML • .NET MAUI 10 • Visual Studio Code" FontSize="16" TextColor="#10253F" />
+                </VerticalStackLayout>
+            </Border>
+            <Label Text="Atividade: Programação Mobile I • Agenda 13" FontSize="14" TextColor="#556577" />
+            <Label Text="Projeto escolar desenvolvido a partir dos conceitos apresentados no material do Centro Paula Souza."
+                   FontSize="12" TextColor="#556577" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

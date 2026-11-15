@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppHotelJoaquim.Views.ResultadoPage"
+             Title="Resumo da estadia" BackgroundColor="#F5F7FA">
+    <ScrollView>
+        <VerticalStackLayout Padding="24,28,24,40" Spacing="18" MaximumWidthRequest="650">
+            <Label Text="Resumo da reserva" FontSize="27" FontAttributes="Bold" TextColor="#10253F" />
+            <Label Text="Confira os detalhes da sua simulação." FontSize="15" TextColor="#556577" />
+
+            <Border Stroke="#DCE5ED" BackgroundColor="White" Padding="22" StrokeShape="RoundRectangle 20">
+                <VerticalStackLayout Spacing="14">
+                    <Label Text="HOTEL AURORA" FontSize="14" FontAttributes="Bold" TextColor="#B98C52" />
+                    <Label Text="{Binding Suite}" FontAttributes="Bold" FontSize="23" TextColor="#10253F" />
+                    <BoxView HeightRequest="1" Color="#E9EDF2" />
+                    <Label Text="Hóspedes" FontSize="13" TextColor="#556577" />
+                    <Label Text="{Binding HospedesTexto}" FontSize="17" TextColor="#10253F" />
+                    <Label Text="Período" FontSize="13" TextColor="#556577" />
+                    <Label Text="{Binding PeriodoTexto}" FontSize="17" TextColor="#10253F" />
+                    <Label Text="Quantidade de diárias" FontSize="13" TextColor="#556577" />
+                    <Label Text="{Binding NoitesTexto}" FontSize="17" TextColor="#10253F" />
+                    <Label Text="Valor por diária" FontSize="13" TextColor="#556577" />
+                    <Label Text="{Binding ValorDiariaTexto}" FontSize="17" TextColor="#10253F" />
+                    <BoxView HeightRequest="1" Color="#E9EDF2" />
+                    <Label Text="TOTAL ESTIMADO" FontSize="13" FontAttributes="Bold" TextColor="#B98C52" />
+                    <Label Text="{Binding TotalTexto}" FontSize="31" FontAttributes="Bold" TextColor="#10253F" />
+                </VerticalStackLayout>
+            </Border>
+            <Label Text="Demonstração escolar. O botão calcula valores ilustrativos; não há pagamento ou reserva de verdade."
+                   TextColor="#556577" FontSize="12" />
+            <Button Text="Voltar para a reserva" Clicked="OnVoltarClicked"
+                    BackgroundColor="#10253F" TextColor="White" CornerRadius="14" HeightRequest="52" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
