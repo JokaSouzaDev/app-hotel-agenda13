@@ -24,9 +24,9 @@ public class ReservaResumo
     public int Noites => (Saida - Entrada).Days;
     public decimal Total => Noites * ValorDiaria;
 
-    public string HospedesTexto => "${Adultos} adulto(s) e ${Criancas} criança(s)";
-    public string PeriodoTexto => "${Entrada:dd/MM/yyyy} a ${Saida:dd/MM/yyyy}";
-    public string NoitesTexto => "${Noites} diária(s)";
+    public string HospedesTexto => $"{Adultos} adulto(s) e {Criancas} criança(s)";
+    public string PeriodoTexto => $"{Entrada:dd/MM/yyyy} a {Saida:dd/MM/yyyy}";
+    public string NoitesTexto => $"{Noites} diária(s)";
     public string ValorDiariaTexto => ValorDiaria.ToString("C", new CultureInfo("pt-BR"));
     public string TotalTexto => Total.ToString("C", new CultureInfo("pt-BR"));
 }
